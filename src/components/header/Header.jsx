@@ -2,6 +2,7 @@ import React from "react";
 import { BsCart3 } from "react-icons/bs";
 import { BiMenu } from "react-icons/bi";
 import avatar from "../../assets/images/image-avatar.png";
+import Logo from "../../assets/images/logo.svg";
 import "./header.css";
 
 const Header = ({ setSidebar }) => {
@@ -22,7 +23,9 @@ const Header = ({ setSidebar }) => {
           className="cursor-pointer text-2xl block md:hidden"
           onClick={() => setSidebar(true)}
         />
-        <h1 className="header-nav__brand text-4xl font-extrabold">sneakers</h1>
+        <div className="header-nav__brand cursor-pointer">
+          <img src={Logo} alt="logo" className="w-full h-auto" />
+        </div>
         <ul className="header-nav__links  flex-row items-center gap-4 text-gray-500 hidden md:flex">
           {navLinks}
         </ul>
