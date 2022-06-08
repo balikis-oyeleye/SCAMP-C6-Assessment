@@ -17,13 +17,12 @@ const Header = ({ setSidebar }) => {
 
   return (
     <header className="header flex flex-row justify-between items-center border-b py-4">
-      <nav className="header-nav flex flex-row items-center gap-4 sm:gap-8">
+      <nav className="header-nav flex flex-row items-center gap-4 sm:gap-8 justify-center">
         <BiMenu
-          size={"30px"}
-          className="cursor-pointer"
+          className="cursor-pointer text-2xl"
           onClick={() => setSidebar(true)}
         />
-        <h1 className="header-nav__brand text-2xl font-extrabold">sneakers</h1>
+        <h1 className="header-nav__brand text-4xl font-extrabold">sneakers</h1>
         <ul className="header-nav__links  flex-row items-center gap-4 text-gray-500 hidden md:flex">
           {navLinks}
         </ul>
