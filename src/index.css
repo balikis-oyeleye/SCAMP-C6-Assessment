@@ -10,17 +10,3 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
-.header-nav__links li:hover {
-  border-bottom: 3px solid var(--orange);
-}
-
-.header-cta__avatar {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-}
-
-.header-cta__avatar:hover {
-  border: 2px solid var(--orange);
-}

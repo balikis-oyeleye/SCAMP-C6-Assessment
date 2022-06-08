@@ -1,7 +1,8 @@
 import React from "react";
 import { BsCart3 } from "react-icons/bs";
 import { BiMenu } from "react-icons/bi";
-import avatar from "../assets/images/image-avatar.png";
+import avatar from "../../assets/images/image-avatar.png";
+import "./header.css";
 
 const Header = () => {
   const links = ["Categories", "Men", "Women", "About", "Contact"];

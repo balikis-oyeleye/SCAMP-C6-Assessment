@@ -1,5 +1,4 @@
-import { Header } from "./components";
-import Sidebar from "./components/SIdebar";
+import { Header, Sidebar } from "./components";
 
 function App() {
   return (

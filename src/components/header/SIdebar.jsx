@@ -13,7 +13,11 @@ const Sidebar = () => {
     );
   });
 
-  return <ul>{navLinks}</ul>;
+  return (
+    <aside className="bg-white w-3/4">
+      <ul className="">{navLinks}</ul>
+    </aside>
+  );
 };
 
 export default Sidebar;
