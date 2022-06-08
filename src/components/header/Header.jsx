@@ -19,7 +19,7 @@ const Header = ({ setSidebar }) => {
     <header className="header flex flex-row justify-between items-center border-b py-4">
       <nav className="header-nav flex flex-row items-center gap-4 sm:gap-8 justify-center">
         <BiMenu
-          className="cursor-pointer text-2xl"
+          className="cursor-pointer text-2xl block md:hidden"
           onClick={() => setSidebar(true)}
         />
         <h1 className="header-nav__brand text-4xl font-extrabold">sneakers</h1>
