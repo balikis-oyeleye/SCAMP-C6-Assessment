@@ -10,3 +10,10 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
+@media screen and (max-width: 320px) {
+  .App {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

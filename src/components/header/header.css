@@ -11,3 +11,20 @@
 .header-cta__avatar:hover {
   border: 2px solid var(--orange);
 }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.disable {
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}

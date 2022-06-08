@@ -4,7 +4,7 @@ import { BiMenu } from "react-icons/bi";
 import avatar from "../../assets/images/image-avatar.png";
 import "./header.css";
 
-const Header = () => {
+const Header = ({ setSidebar }) => {
   const links = ["Categories", "Men", "Women", "About", "Contact"];
 
   const navLinks = links.map((link, _index) => {
@@ -18,9 +18,13 @@ const Header = () => {
   return (
     <header className="header flex flex-row justify-between items-center border-b py-4">
       <nav className="header-nav flex flex-row items-center gap-4 sm:gap-8">
-        <BiMenu size={"30px"} className="cursor-pointer" />
+        <BiMenu
+          size={"30px"}
+          className="cursor-pointer"
+          onClick={() => setSidebar(true)}
+        />
         <h1 className="header-nav__brand text-2xl font-extrabold">sneakers</h1>
-        <ul className="header-nav__links  flex-row items-center gap-4 text-gray-500 hidden sm:flex">
+        <ul className="header-nav__links  flex-row items-center gap-4 text-gray-500 hidden md:flex">
           {navLinks}
         </ul>
       </nav>
