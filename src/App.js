@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { Header, Sidebar } from "./components";
+import { Header, Sidebar, Carousel } from "./components";
 
 function App() {
   const [sidebar, setSidebar] = useState(true);
 
   return (
     <>
-      <div className="App container mx-auto">
+      <div className="App">
         <Header setSidebar={setSidebar} />
+        <Carousel />
       </div>
       {sidebar && <Sidebar setSidebar={setSidebar} />}
     </>

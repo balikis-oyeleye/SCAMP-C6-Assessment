@@ -17,7 +17,7 @@ const Header = ({ setSidebar }) => {
   });
 
   return (
-    <header className="header flex flex-row justify-between items-center border-b py-4">
+    <header className="header container mx-auto flex flex-row justify-between items-center border-b py-4">
       <nav className="header-nav flex flex-row items-center gap-4 sm:gap-8 justify-center">
         <BiMenu
           className="cursor-pointer text-2xl block md:hidden"
