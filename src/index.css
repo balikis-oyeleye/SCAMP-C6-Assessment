@@ -17,6 +17,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.sidebar {
+  z-index: 10000000000000000000000;
+}
+
 @media screen and (max-width: 320px) {
   .header {
     padding-left: 1rem;
