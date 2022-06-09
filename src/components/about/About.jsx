@@ -3,7 +3,7 @@ import { BsCart3 } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className="container mx-auto mt-4">
+    <div className="container mx-auto md:w-1/2 mt-10 md:mt-0">
       <p className="text-orange text-xs font-semibold "> SNEAKER COMPANY</p>
       <h2 className="font-bold text-3xl my-2">
         Fall Limited Edition <br /> Sneakers
@@ -22,15 +22,17 @@ const About = () => {
         </h2>
         <p className="line-through text-gray-400">$250.00</p>
       </div>
-      <div className="flex flex-row justify-between items-center bg-gray-200 rounded-lg px-4 py-1 my-4">
-        <button className="font-bold text-2xl text-orange">-</button>
-        <h5>{0}</h5>
-        <button className="font-bold text-2xl text-orange">+</button>
+      <div className="about-cta flex flex-col md:flex-row gap-4 my-4">
+        <div className="flex flex-row justify-between items-center bg-gray-200 rounded-lg px-4 py-2 w-full md:w-1/4">
+          <button className="font-bold text-2xl text-orange">-</button>
+          <h5>{0}</h5>
+          <button className="font-bold text-2xl text-orange">+</button>
+        </div>
+        <button className="bg-orange w-full md:w-3/4  rounded-lg py-2 text-white flex justify-center items-center gap-2">
+          <BsCart3 className="text-xl" />
+          Add to cart
+        </button>
       </div>
-      <button className="bg-orange w-full mb-4 rounded-lg py-2 text-white flex justify-center items-center gap-2">
-        <BsCart3 className="text-xl" />
-        Add to cart
-      </button>
     </div>
   );
 };

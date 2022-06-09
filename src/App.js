@@ -8,7 +8,7 @@ function App() {
     <>
       <main className="App">
         <Header setSidebar={setSidebar} />
-        <section className="flex flex-col md:flex-row">
+        <section className="flex flex-col md:flex-row md:gap-20 md:mt-10 md:container md:mx-auto">
           <Carousel />
           <About />
         </section>
