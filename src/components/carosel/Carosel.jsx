@@ -3,7 +3,7 @@ import { productImage } from "../../assets/data";
 
 const Carousel = () => {
   const images = productImage.map((item) => {
-    return <img src={item.image} alt="im" key={item.id} />;
+    return <img src={item.image} alt="product" key={item.id} />;
   });
 
   return (
