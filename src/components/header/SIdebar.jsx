@@ -16,7 +16,7 @@ const Sidebar = ({ setSidebar }) => {
 
   return (
     <aside className="sidebar">
-      <div className="bg-white w-3/4 h-screen pl-4 pt-4">
+      <div className="bg-white w-3/4 sm:w-2/4 h-screen pl-4 pt-4">
         <BsX
           className="text-3xl font-bold cursor-pointer"
           onClick={() => setSidebar(false)}
