@@ -36,7 +36,7 @@ const Carousel = () => {
       <div className="carousel-slider">
         <img
           src={productImage[current].image}
-          alt=""
+          alt="product"
           className="w-full h-auto"
         />
       </div>
