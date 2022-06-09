@@ -2,14 +2,16 @@ import { useState } from "react";
 import { Header, Sidebar, Carousel } from "./components";
 
 function App() {
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(false);
 
   return (
     <>
-      <div className="App">
+      <main className="App">
         <Header setSidebar={setSidebar} />
-        <Carousel />
-      </div>
+        <section>
+          <Carousel />
+        </section>
+      </main>
       {sidebar && <Sidebar setSidebar={setSidebar} />}
     </>
   );
