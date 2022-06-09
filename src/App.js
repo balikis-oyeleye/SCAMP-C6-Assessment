@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Header, Sidebar, Carousel } from "./components";
+import { Header, Sidebar, Carousel, About } from "./components";
 
 function App() {
   const [sidebar, setSidebar] = useState(false);
@@ -8,8 +8,9 @@ function App() {
     <>
       <main className="App">
         <Header setSidebar={setSidebar} />
-        <section>
+        <section className="flex flex-col md:flex-row">
           <Carousel />
+          <About />
         </section>
       </main>
       {sidebar && <Sidebar setSidebar={setSidebar} />}
