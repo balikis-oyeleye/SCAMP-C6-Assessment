@@ -15,8 +15,8 @@ export const productImage = [
 ];
 
 export const thumbnail = [
-  { id: 1, image: thumbnail1 },
-  { id: 2, image: thumbnail2 },
-  { id: 3, image: thumbnail3 },
-  { id: 4, image: thumbnail4 },
+  { id: 1, image: thumbnail1, isActive: true },
+  { id: 2, image: thumbnail2, isActive: false },
+  { id: 3, image: thumbnail3, isActive: false },
+  { id: 4, image: thumbnail4, isActive: false },
 ];

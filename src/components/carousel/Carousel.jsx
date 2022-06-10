@@ -11,20 +11,23 @@ const Carousel = () => {
   // Carousel on large screen
 
   const thumbnailImages = thumbnail.map((item, _item) => {
-    const lists = document.querySelectorAll(".thumbnail-container");
     const onClick = () => {
       setMainImage(_item);
     };
 
     const active = () => {
-      lists.forEach((item) => {
-        item.classList.remove("active");
-        lists[_item].classList.add("active");
+      thumbnail.forEach((item) => {
+        item.isActive = false;
       });
+      thumbnail[_item].isActive = true;
     };
 
     return (
-      <div key={item.id} onClick={active} className="thumbnail-container">
+      <div
+        key={item.id}
+        onClick={active}
+        className={`thumbnail-container ${item.isActive ? "active" : ""}`}
+      >
         <div className="overlay rounded-lg"></div>
         <img
           src={item.image}
