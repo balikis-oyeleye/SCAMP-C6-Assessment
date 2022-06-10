@@ -8,19 +8,36 @@ const Carousel = () => {
   const [current, setCurrent] = useState(0);
   const [mainImage, setMainImage] = useState(0);
 
+  // Carousel on large screen
+
+  const lists = document.querySelectorAll(".thumbnail-container");
+
   const thumbnailImages = thumbnail.map((item, _item) => {
+    const onClick = () => {
+      setMainImage(_item);
+    };
+
+    const active = () => {
+      lists.forEach((item) => {
+        item.classList.remove("active");
+        lists[_item].classList.add("active");
+      });
+    };
+
     return (
-      <div className="" key={item.id}>
+      <div key={item.id} onClick={active} className="thumbnail-container">
+        <div className="overlay rounded-lg"></div>
         <img
           src={item.image}
           alt="thumbnail"
-          onClick={() => setMainImage(_item)}
-          className="w-full h-auto rounded-lg"
+          onClick={() => onClick()}
+          className="thumbnail-image w-full h-auto rounded-lg cursor-pointer"
         />
       </div>
     );
   });
 
+  // Carousel on mobile screen
   const onPrevious = () => {
     if (current === 0) {
       setCurrent(3);
@@ -40,6 +57,7 @@ const Carousel = () => {
 
   return (
     <>
+      {/* Gallery Large screen */}
       <div className="gallery flex flex-col gap-6">
         <div className="">
           <img
@@ -50,6 +68,7 @@ const Carousel = () => {
         </div>
         <div className="flex flex-row gap-6">{thumbnailImages}</div>
       </div>
+      {/* Carousel mobile screen */}
       <div className="carousel">
         <BiChevronLeft
           className="carousel-prev cursor-pointer"
