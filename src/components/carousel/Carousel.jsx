@@ -60,7 +60,7 @@ const Carousel = () => {
   return (
     <>
       {/* Gallery Large screen */}
-      <div className="gallery flex flex-col gap-6">
+      <div className="gallery flex flex-col gap-6 container mx-auto">
         <div className="">
           <img
             src={productImage[mainImage].image}
