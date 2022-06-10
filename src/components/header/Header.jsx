@@ -5,7 +5,7 @@ import avatar from "../../assets/images/image-avatar.png";
 import Logo from "../../assets/images/logo.svg";
 import "./header.css";
 
-const Header = ({ setSidebar }) => {
+const Header = ({ setSidebar, setCartOpen }) => {
   const links = ["Categories", "Men", "Women", "About", "Contact"];
 
   const navLinks = links.map((link, _index) => {
@@ -15,6 +15,13 @@ const Header = ({ setSidebar }) => {
       </li>
     );
   });
+
+  // Function to toggle cart
+  const toggleCart = () => {
+    setCartOpen((prev) => {
+      return !prev;
+    });
+  };
 
   return (
     <header className="header container mx-auto flex flex-row justify-between items-center border-b py-4">
@@ -32,7 +39,11 @@ const Header = ({ setSidebar }) => {
       </nav>
       <div className="header-cta flex flex-row items-center gap-6">
         <h2 className="header-cta__cart">
-          <BsCart3 size={"24px"} className="cursor-pointer" />
+          <BsCart3
+            size={"24px"}
+            className="cursor-pointer"
+            onClick={toggleCart}
+          />
         </h2>
         <div className="header-cta__avatar">
           <img src={avatar} alt="avatar" className="cursor-pointer" />
