@@ -28,7 +28,7 @@ const Carousel = () => {
         onClick={active}
         className={`thumbnail-container ${item.isActive ? "active" : ""}`}
       >
-        <div className="overlay rounded-lg"></div>
+        <div className="overlay rounded-lg cursor-pointer"></div>
         <img
           src={item.image}
           alt="thumbnail"
