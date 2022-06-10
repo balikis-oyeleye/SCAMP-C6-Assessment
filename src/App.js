@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Header, Sidebar, Carousel, About } from "./components";
+import { Header, Sidebar, Carousel, About, Cart } from "./components";
 
 function App() {
   const [sidebar, setSidebar] = useState(false);
