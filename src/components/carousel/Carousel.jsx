@@ -10,9 +10,8 @@ const Carousel = () => {
 
   // Carousel on large screen
 
-  const lists = document.querySelectorAll(".thumbnail-container");
-
   const thumbnailImages = thumbnail.map((item, _item) => {
+    const lists = document.querySelectorAll(".thumbnail-container");
     const onClick = () => {
       setMainImage(_item);
     };
