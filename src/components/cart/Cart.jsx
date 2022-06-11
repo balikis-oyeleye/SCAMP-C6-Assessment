@@ -58,7 +58,7 @@ const Cart = () => {
           <div className="cart-body flex flex-col justify-center">
             {products}
             <div className="cart-body__btn px-4">
-              <button className="w-full text-center bg-orange py-3 text-white rounded-lg">
+              <button className="w-full text-center bg-orange py-3 text-white rounded-lg hover:bg-light_orange">
                 Checkout
               </button>
             </div>

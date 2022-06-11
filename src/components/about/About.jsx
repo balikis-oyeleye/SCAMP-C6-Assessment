@@ -35,17 +35,30 @@ const About = () => {
       </div>
       <div className="about-cta flex flex-col md:flex-row gap-4 my-4">
         <div className="flex flex-row justify-between items-center bg-gray-200 rounded-lg px-4 py-2 w-full md:w-1/4">
-          <button className="font-bold text-2xl text-orange">-</button>
+          {/* Decrease product button */}
+          <button
+            className="font-bold text-2xl text-orange"
+            onClick={() => cartDispatch({ type: "DECREASE", payload: cart })}
+          >
+            -
+          </button>
 
           {/* Product quantity count */}
           {cart.length < 1 ? <h5>0</h5> : quantity}
-          <button className="font-bold text-2xl text-orange">+</button>
+
+          {/* Increase product button */}
+          <button
+            className="font-bold text-2xl text-orange"
+            onClick={() => cartDispatch({ type: "INCREASE", payload: cart })}
+          >
+            +
+          </button>
         </div>
 
         {/* Add to cart and remove from cart button */}
         {cart.length === 0 ? (
           <button
-            className="bg-orange w-full md:w-3/4  rounded-lg py-2 text-white flex justify-center items-center gap-2"
+            className="bg-orange w-full md:w-3/4  rounded-lg py-2 text-white flex justify-center items-center gap-2 hover:bg-light_orange"
             onClick={() =>
               cartDispatch({ type: "ADD_TO_CART", payload: items })
             }
@@ -55,7 +68,7 @@ const About = () => {
           </button>
         ) : (
           <button
-            className="bg-orange w-full md:w-3/4  rounded-lg py-2 text-white flex justify-center items-center gap-2"
+            className="bg-orange w-full md:w-3/4  rounded-lg py-2 text-white flex justify-center items-center gap-2 hover:bg-light_orange"
             onClick={() => cartDispatch({ type: "REMOVE_FROM_CART" })}
           >
             <BsCart3 className="text-xl" />
