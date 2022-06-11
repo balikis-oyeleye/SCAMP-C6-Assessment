@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./cart.css";
 import { useCartContext } from "../../context/CartContext";
 import { BsTrash } from "react-icons/bs";
@@ -8,6 +8,17 @@ const Cart = () => {
     cartState: { cart },
     cartDispatch,
   } = useCartContext();
+
+  const [totalPrice, setTotalPrice] = useState(0);
+  useEffect(() => {
+    setTotalPrice(
+      cart.reduce((prev, current) => {
+        const tot = current.qty * current[0].price;
+        prev += tot;
+        return prev;
+      }, 0)
+    );
+  }, [cart]);
 
   const products = cart.map((item, _index) => {
     return (
@@ -26,7 +37,9 @@ const Cart = () => {
           <p>{item[0].name}</p>
           <p className="prod-details__price">
             ${item[0].price}.00 x {item.qty}
-            <span className="text-black ml-2 font-extrabold">${125}.00</span>
+            <span className="text-black ml-2 font-extrabold">
+              ${totalPrice}.00
+            </span>
           </p>
         </div>
         <div className="prod-remove">
