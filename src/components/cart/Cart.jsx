@@ -10,6 +10,7 @@ const Cart = () => {
   } = useCartContext();
 
   const [totalPrice, setTotalPrice] = useState(0);
+
   useEffect(() => {
     setTotalPrice(
       cart.reduce((prev, current) => {
