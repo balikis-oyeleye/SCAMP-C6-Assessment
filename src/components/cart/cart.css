@@ -6,3 +6,12 @@
   height: 13rem;
   background-color: #fff;
 }
+
+@media screen and (max-width: 576px) {
+  .cart {
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+  }
+}
