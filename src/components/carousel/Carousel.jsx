@@ -9,7 +9,6 @@ const Carousel = () => {
   const [mainImage, setMainImage] = useState(0);
 
   // Carousel on large screen
-
   const thumbnailImages = thumbnail.map((item, _item) => {
     const onClick = () => {
       setMainImage(_item);
@@ -80,7 +79,7 @@ const Carousel = () => {
           className="carousel-next cursor-pointer"
           onClick={onNext}
         />
-        <div className="carousel-slider">
+        <div className="carousel-slider w-full">
           <img
             src={productImage[current].image}
             alt="product"

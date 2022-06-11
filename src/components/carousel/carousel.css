@@ -7,8 +7,7 @@
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 40%;
-  transform: translateY(-40%);
+  top: 175px;
   font-size: 2rem;
   z-index: 100000;
 }
@@ -44,8 +43,16 @@
     display: none;
   }
 }
+
 @media screen and (max-width: 768px) {
   .gallery {
     display: none;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .carousel-next,
+  .carousel-prev {
+    top: 280px;
   }
 }
