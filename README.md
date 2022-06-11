@@ -9,3 +9,13 @@ Reactjs Technical Assessment submission for the She Code Africa Mentoring Progra
 - Switch the large product image by clicking on the small thumbnail images
 - Add items to the cart
 - View the cart and remove items from it
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- React-icons
+- [TailwindCss](https://tailwindcss.com/)
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
