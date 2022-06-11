@@ -10,6 +10,10 @@ Reactjs Technical Assessment submission for the She Code Africa Mentoring Progra
 - Add items to the cart
 - View the cart and remove items from it
 
+###Links:
+
+- Live link: [Sneakers website](https://qreamville.github.io/SCAMP-C6-Assessment/)
+
 ### Built with
 
 - Semantic HTML5 markup
