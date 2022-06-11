@@ -1,7 +1,14 @@
 import React from "react";
 import { BsCart3 } from "react-icons/bs";
+import { useCartContext } from "../../context/CartContext";
+import { items } from "../../assets/data";
 
 const About = () => {
+  const {
+    cartState: { cart },
+    cartDispatch,
+  } = useCartContext();
+
   return (
     <div className="container mx-auto md:w-1/2 mt-10 md:mt-0">
       <p className="text-orange text-xs font-semibold "> SNEAKER COMPANY</p>
@@ -25,10 +32,13 @@ const About = () => {
       <div className="about-cta flex flex-col md:flex-row gap-4 my-4">
         <div className="flex flex-row justify-between items-center bg-gray-200 rounded-lg px-4 py-2 w-full md:w-1/4">
           <button className="font-bold text-2xl text-orange">-</button>
-          <h5>{0}</h5>
+          {cart.length > 1 ? <h5>{cart[0].qty}</h5> : <h5>0</h5>}
           <button className="font-bold text-2xl text-orange">+</button>
         </div>
-        <button className="bg-orange w-full md:w-3/4  rounded-lg py-2 text-white flex justify-center items-center gap-2">
+        <button
+          className="bg-orange w-full md:w-3/4  rounded-lg py-2 text-white flex justify-center items-center gap-2"
+          onClick={() => cartDispatch({ type: "ADD_TO_CART", payload: items })}
+        >
           <BsCart3 className="text-xl" />
           Add to cart
         </button>

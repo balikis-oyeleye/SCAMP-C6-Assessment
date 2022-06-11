@@ -20,3 +20,11 @@ export const thumbnail = [
   { id: 3, image: thumbnail3, isActive: false },
   { id: 4, image: thumbnail4, isActive: false },
 ];
+
+export const items = [
+  {
+    id: 1,
+    image: img1,
+    price: 125,
+  },
+];
