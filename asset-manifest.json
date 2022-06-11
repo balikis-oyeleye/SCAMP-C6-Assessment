@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/SCAMP-C6-Assessment/static/css/main.1860eea3.css",
-    "main.js": "/SCAMP-C6-Assessment/static/js/main.2bd30b7d.js",
+    "main.css": "/SCAMP-C6-Assessment/static/css/main.b8ecb985.css",
+    "main.js": "/SCAMP-C6-Assessment/static/js/main.746dfcab.js",
     "static/media/image-product-2.jpg": "/SCAMP-C6-Assessment/static/media/image-product-2.c8bb0aaccecdebb16596.jpg",
     "static/media/image-product-1.jpg": "/SCAMP-C6-Assessment/static/media/image-product-1.520cc50bd13955f55cb2.jpg",
     "static/media/image-product-3.jpg": "/SCAMP-C6-Assessment/static/media/image-product-3.af5c71ba9ffcc0b8b54d.jpg",
     "static/media/image-product-4.jpg": "/SCAMP-C6-Assessment/static/media/image-product-4.9962862ef3eff6d65e5b.jpg",
     "static/media/logo.svg": "/SCAMP-C6-Assessment/static/media/logo.4fe9c1e86cf9bf600f0c239f6a6e5317.svg",
     "index.html": "/SCAMP-C6-Assessment/index.html",
-    "main.1860eea3.css.map": "/SCAMP-C6-Assessment/static/css/main.1860eea3.css.map",
-    "main.2bd30b7d.js.map": "/SCAMP-C6-Assessment/static/js/main.2bd30b7d.js.map"
+    "main.b8ecb985.css.map": "/SCAMP-C6-Assessment/static/css/main.b8ecb985.css.map",
+    "main.746dfcab.js.map": "/SCAMP-C6-Assessment/static/js/main.746dfcab.js.map"
   },
   "entrypoints": [
-    "static/css/main.1860eea3.css",
-    "static/js/main.2bd30b7d.js"
+    "static/css/main.b8ecb985.css",
+    "static/js/main.746dfcab.js"
   ]
 }
