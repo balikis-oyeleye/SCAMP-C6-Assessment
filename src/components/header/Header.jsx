@@ -46,11 +46,11 @@ const Header = ({ setSidebar, setCartOpen }) => {
         <h2 className="header-cta__cart">
           <BsCart3
             size={"24px"}
-            className="cursor-pointer relative"
+            className="cart-icon cursor-pointer"
             onClick={toggleCart}
           />
           {cart.length > 0 && (
-            <div className="badge absolute bg-orange rounded-full">
+            <div className="badge bg-orange rounded-full">
               <h4 className="text-white">{cart[0].qty}</h4>
             </div>
           )}
