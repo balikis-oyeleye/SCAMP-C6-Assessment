@@ -9,7 +9,7 @@ function App() {
     <>
       <main className="App">
         <Header setSidebar={setSidebar} setCartOpen={setCartOpen} />
-        <section className="flex flex-col md:flex-row md:gap-20 md:mt-10 md:container md:mx-auto absolute">
+        <section className="flex flex-col md:flex-row md:gap-20 md:mt-10 md:container md:mx-auto relative">
           <Carousel />
           <About />
           {cartOpen && <Cart />}

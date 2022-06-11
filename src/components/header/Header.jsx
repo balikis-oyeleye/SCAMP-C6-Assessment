@@ -3,9 +3,14 @@ import { BsCart3 } from "react-icons/bs";
 import { BiMenu } from "react-icons/bi";
 import avatar from "../../assets/images/image-avatar.png";
 import Logo from "../../assets/images/logo.svg";
+import { useCartContext } from "../../context/CartContext";
 import "./header.css";
 
 const Header = ({ setSidebar, setCartOpen }) => {
+  const {
+    cartState: { cart },
+  } = useCartContext();
+
   const links = ["Categories", "Men", "Women", "About", "Contact"];
 
   const navLinks = links.map((link, _index) => {
@@ -41,9 +46,14 @@ const Header = ({ setSidebar, setCartOpen }) => {
         <h2 className="header-cta__cart">
           <BsCart3
             size={"24px"}
-            className="cursor-pointer"
+            className="cursor-pointer relative"
             onClick={toggleCart}
           />
+          {cart.length > 0 && (
+            <div className="badge absolute bg-orange rounded-full">
+              <h4 className="text-white">{cart[0].qty}</h4>
+            </div>
+          )}
         </h2>
         <div className="header-cta__avatar">
           <img src={avatar} alt="avatar" className="cursor-pointer" />

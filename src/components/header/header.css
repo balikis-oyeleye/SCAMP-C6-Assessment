@@ -20,7 +20,14 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.disable {
+.badge {
+  top: 15px;
+  right: 75px;
+  padding: 0.4px 8px;
+}
+
+.badge h4 {
+  font-size: 0.6rem;
 }
 
 @media screen and (min-width: 768px) {
