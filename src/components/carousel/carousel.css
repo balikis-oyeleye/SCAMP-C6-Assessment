@@ -9,7 +9,7 @@
   position: absolute;
   top: 175px;
   font-size: 2rem;
-  z-index: 100000;
+  z-index: 1000;
 }
 
 .carousel-prev {
