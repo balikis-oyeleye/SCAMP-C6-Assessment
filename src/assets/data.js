@@ -24,7 +24,8 @@ export const thumbnail = [
 export const items = [
   {
     id: 1,
-    image: img1,
+    name: "Fall Limited Edition Sneakers",
+    image: thumbnail1,
     price: 125,
   },
 ];
