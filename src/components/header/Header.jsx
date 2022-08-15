@@ -49,7 +49,7 @@ const Header = ({ setSidebar, setCartOpen }) => {
             className="cart-icon cursor-pointer"
             onClick={toggleCart}
           />
-          {cart.length > 0 && (
+          {cart.length && (
             <div className="badge bg-orange rounded-full">
               <h4 className="text-white">{cart[0].qty}</h4>
             </div>
